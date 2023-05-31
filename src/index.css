@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.header {
+  background-image: url(./components/image/banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.anime1 {
+  animation: anime1 30s infinite;
+  z-index: 1;
+}
+.anime2 {
+  animation: anime2 30s infinite;
+}
+.anime3 {
+  animation: anime3 30s infinite;
+}
+.anime4 {
+  animation: anime4 2s infinite;
+}
+@keyframes anime1 {
+  0% {
+    transform: rotate(0deg) translateY(100px) translateX(100px);
+  }
+  25% {
+    transform: rotate(0deg) translateY(-550px) translateX(550px);
+  }
+  50% {
+    transform: rotate(0deg) translateY(-500px) translateX(-100px);
+  }
+  75% {
+    transform: rotate(25deg) translateY(0px) translateX(0px);
+  }
+  100% {
+    transform: rotate(0deg) translateY(110px) translateX(120px);
+  }
+}
+@keyframes anime2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(0deg) translateX(100px) translateY(100px);
+  }
+  50% {
+    transform: rotate(180deg) translateX(-350px) translateY(350px);
+  }
+  75% {
+    transform: rotate(360deg) translateX(100px) translateY(100px);
+  }
+  100% {
+    transform: rotate(0deg) translateX(100px) translateY(10px);
+  }
+}
+@keyframes anime3 {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(0deg) translateX(550px);
+  }
+  50% {
+    transform: rotate(0deg) translateY(-350px) translateX(550px);
+  }
+  75% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+@keyframes anime4 {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(360deg);
+  }
+  50% {
+    transform: rotate(360deg);
+  }
+  75% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate3d(360px);
+  }
+}
